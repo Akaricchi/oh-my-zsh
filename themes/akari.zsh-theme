@@ -20,4 +20,6 @@ function _gitprompt {
     echo "$g%{$fg_bold[red]%} ← "
 }
 
-PROMPT='%? %{$fg_bold[black]%}«$(_gitprompt)%{$fg_bold[cyan]%}%3/%{$fg_bold[black]%}» %{$reset_color%}'
+PROMPT='
+%? %{$fg_bold[black]%}[ %{$fg_bold[red]%}%n%{$fg_bold[black]%}@%{$fg_bold[yellow]%}%M %{$fg_bold[red]%}:: $(_gitprompt)%{$fg_bold[cyan]%}%5/%{$fg_bold[black]%} ]
+%{$reset_color%}%# '
