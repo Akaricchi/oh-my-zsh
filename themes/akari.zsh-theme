@@ -21,5 +21,5 @@ function _gitprompt {
 }
 
 PROMPT='
-%? %{$fg_bold[black]%}[ %{$fg_bold[red]%}%n%{$fg_bold[black]%}@%{$fg_bold[yellow]%}%M %{$fg_bold[red]%}:: $(_gitprompt)%{$fg_bold[cyan]%}%5/%{$fg_bold[black]%} ]
-%{$reset_color%}%# '
+%{$fg_bold[black]%}[%{$fg_bold[magenta]%}%?%{$fg_bold[black]%}] %{$fg_bold[black]%}[%{$fg_bold[red]%}%n%{$fg_bold[black]%}@%{$fg_bold[yellow]%}%M%{$fg_bold[black]%}]%{$fg_bold[black]%} [$(_gitprompt)%{$fg_bold[cyan]%}%5/%{$fg_bold[black]%}]
+ %{$reset_color%}%# '
